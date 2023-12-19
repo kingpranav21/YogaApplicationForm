@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import "./YogaForm.css"; // Import the stylesheet
-import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
-import InjectedCheckoutForm from "./components/CheckoutForm";
-const stripePromise = loadStripe(
-  "pk_test_51OP7QzSH1uIu4rum4TGbxqg0JeGH8wICyh8EpvtpTSLC70Mqil9nlv9cKcOXRpGSoo1WLf0n34s6QYR6uSks0bBQ00dQtAwHXw"
-);
-console.log(stripePromise);
+
 const FormComponent = () => {
   const [formData, setFormData] = useState({
       fullName: "",
